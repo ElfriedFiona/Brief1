@@ -1,0 +1,225 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+.hero h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.btn-custom {
+    background-color: #1C5B20;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 100px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    border: 2px solid #1C5B20;
+    padding: 30px 30px;
+    background-color: #1C5B20;
+}
+
+.carousel-item .text-start{
+    padding-top: -30em;
+}
+
+/* Cards Hover Effect */
+.info-card {
+    background-color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.info-card h5{
+    color: #7AE37F;
+    transition: background 0.3s, color 0.3s;
+}
+
+.info-card p{
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+.info-card:hover {
+    background-color: #7AE37F;
+    color: white;
+}
+
+/* Nos Étapes de Travail */
+.steps {
+    text-align: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+
+.circle-1 { 
+    width: 50px;
+    height: 50px;
+    background-color: #5DC162; 
+}
+.circle-2 { 
+    width: 65px;
+    height: 65px;
+    background-color: #7AE37F; }
+.circle-3 { 
+    width: 80px;
+    height: 80px;
+    background-color: #AFFFB3; }
+.circle-4 { 
+    width: 90px;
+    height: 90px;
+    background-color: #DDFFDF; }
+.circle-5 { 
+    width: 100px;
+    height: 100px;
+    background-color: #F4FFF5; 
+}
+
+h2{
+    color: #C6FFC9;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.mt-5 h5{
+    color: #7BCDFF;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.clients{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.portfolio-container{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+margin-left: 10em;
+}
+
+.portfolio-box{
+background-image: url('../assets/images/beau-tir-cascade-qui-descend-montagnes_181624-1282.jpg');
+}
+
+.portfolio-detail{
+display: none;
+
+}
+
+.portfolio-detail.active{
+display: block;
+}
+
+.portfolio-box  h3{
+font-size: 2rem;
+margin: .8rem 0 2rem;
+color: #5DC162;
+font-weight: bold;
+text-align: left;
+margin-left: 0.3em;
+padding-top: 1em;
+}
+
+.portfolio-box p{
+font-size: 1rem;
+font-weight: bold;
+text-align: left;
+margin-left: 1em;
+}
+
+.porfolio-box{
+background-color: #5DC162;
+height: 71%;
+margin-top: 1.8%;
+width: 45%;
+}
+
+.porfolio-box .portfolio-carousel{
+width: 100%;
+height: 30rem;
+border-radius: 3rem;
+overflow: hidden;
+}
+
+.portfolio-carousel .img-slide{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 100%;
+gap: 2rem;
+height: inherit;
+transition: transform 0.5s ease-in-out;
+}
+
+
+.portfolio-carousel .img-item img{
+display: block;
+width: 80%;
+height: 50%;
+object-fit: cover;
+border-radius: 1rem;
+margin-top: 2rem;
+}
+
+.portfolio-box .navigation{
+text-align: right;
+margin-top: 3rem;
+}
+
+.portfolio-box .navigation button{
+display: inline-flex;
+padding: .1rem;
+background: white;
+border: .2rem solid var(--main-color);
+border-radius: .6rem;
+font-size: 3rem;
+color: var(--main-color);
+cursor: pointer;
+}
+
+.portfolio-box .navigation button.disabled{
+border-color: rgb(12, 12, 12);
+color: var(--second-bg-color);
+}
+
+.portfolio-box .navigation .arrow-right{
+margin-left: .5rem;
+}
+
+
