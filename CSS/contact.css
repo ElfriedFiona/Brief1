@@ -18,3 +18,75 @@
 .map-container area:hover {
     opacity: 0.5;
 }
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.image-container {
+    display: flex; /* Active le modèle de boîte flexible */
+    flex-direction: row; /* Définit la direction de l'axe principal sur horizontale */
+    gap: 10px; /* Ajoute un espace de 10 pixels entre les images */
+    text-align:center;
+}
+
+.image-container img {
+    width: 200px; /* Définit la largeur des images (ajuster selon vos besoins) */
+    height: auto; /* Ajuste la hauteur automatiquement pour conserver les proportions */
+    
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Assure que le conteneur occupe toute la largeur */
+    height: 500px; /* Définit la hauteur du conteneur (ajuster selon vos besoins) */
+  }
+  
+  .container img {
+    max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+    max-height: 100%; /* Empêche l'image de dépasser la hauteur du conteneur */
+    width: auto; /* Ajuste la largeur de l'image proportionnellement */
+    height: auto; /* Ajuste la hauteur de l'image proportionnellement */
+  }
