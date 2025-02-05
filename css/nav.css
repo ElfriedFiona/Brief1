@@ -33,3 +33,6 @@
 .search-input {
     border: none;
 }
+body {
+    padding-top: 70px;
+}

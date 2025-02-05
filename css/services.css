@@ -34,6 +34,10 @@
     border: none;
 }
 
+body {
+    padding-top: 70px;
+}
+
 .carousel-item {
     height: 100vh;
     background-size: cover;
@@ -59,4 +63,65 @@
     z-index: 10;
     text-align: center;
     color: white;
+}
+
+ /* Style pour le sous-titre de la section "Service Style 01" */
+ .section-subtitle {
+    color: #4CAF50; /* Couleur verte pour correspondre au texte "Service Style 01" */
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 10px; /* Marge inférieure pour espacer le titre principal */
+}
+
+/* Style pour le titre principal */
+.section-title {
+    font-weight: bold; /* Met le texte en gras pour le rendre plus proéminent */
+    font-size: 2.5rem; /* Définit une grande taille de police pour le titre */
+}
+
+/* Style pour centrer le texte */
+.text-center {
+    text-align: center; /* Centrer tout le contenu du texte */
+}
+
+ /* Style personnalisé pour les cartes */
+ .card-custom {
+    background-color: #e0f7e8; /* Fond vert clair similaire à l'image */
+    border: none; /* Supprimer les bordures par défaut des cartes */
+    padding: 20px; /* Ajout de padding à l'intérieur des cartes */
+}
+
+/* Style personnalisé pour le titre de la carte */
+.card-title {
+    color: #4CAF50; /* Couleur verte pour le titre "Ressources Fossiles" */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour l'icône verte */
+.icon {
+    color: #4CAF50; /* Couleur verte pour correspondre au titre */
+    font-size: 2rem; /* Agrandit l'icône */
+    margin-bottom: 10px; /* Espace sous l'icône */
+}
+
+  /* Style personnalisé pour le grand texte avec une image */
+  
+
+/* Style pour le sous-titre */
+.experience-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-top: -20px; /* Ajuster le positionnement si nécessaire */
+}
+
+/* Style pour le texte à droite */
+.experience-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.experience-text p {
+    font-size: 1rem;
+    color: #6c757d; /* Texte gris pour la description */
 }
