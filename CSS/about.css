@@ -11,4 +11,246 @@
     background-size:contain;
     background-repeat: no-repeat;
     /* height:1vh; */
+
+/* .top{
+    margin-top: 2em;
 } */
+
+.navbar {
+    background-color: #0a3b59; /* Bleu foncé */
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar-brand span {
+    color: #5ed75e;
+}
+.navbar-brand span #white{
+    color: white;
+}
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #5ed75e; /* Vert */
+}
+.btn-quote {
+    border: 1px solid white;
+    color: white;
+}
+.btn-quote:hover {
+    background-color: white;
+    color: #0a3b59;
+}
+.input-group-text {
+    background-color: #5ed75e;
+    color: white;
+    border: none;
+}
+.search-input {
+    border: none;
+}
+body {
+    padding-top: 50px;
+}
+
+.hero{
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/images/solar-panels-wind-turbines-green-energy-concept\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+/* Nos Étapes de Travail */
+.steps {
+    text-align: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+
+.circle-1 { 
+    width: 50px;
+    height: 50px;
+    background-color: #5DC162; 
+}
+.circle-2 { 
+    width: 65px;
+    height: 65px;
+    background-color: #7AE37F; }
+.circle-3 { 
+    width: 80px;
+    height: 80px;
+    background-color: #AFFFB3; }
+.circle-4 { 
+    width: 90px;
+    height: 90px;
+    background-color: #DDFFDF; }
+.circle-5 { 
+    width: 100px;
+    height: 100px;
+    background-color: #F4FFF5; 
+}
+
+/* Style pour le sous-titre */
+.experience-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-top: -20px; /* Ajuster le positionnement si nécessaire */
+}
+
+/* Style pour le texte à droite */
+.experience-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: -1.5em;
+}
+
+.experience-text p {
+    margin-right: 0;
+    margin-top: 1em;
+    font-size: 1rem;
+    color: #6c757d; /* Texte gris pour la description */
+}
+
+.avis{
+    background-color: rgb(214, 208, 208);
+    padding: 70px 10px;
+    margin: 20px 0;
+}
+
+.container-avis{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 40%;
+    row-gap: 1em;
+    column-gap: 3em;
+}
+
+.box h2{
+    color: #5DC162;
+}
+
+.box h3{
+    color: rgb(29, 47, 75);
+}
+
+.box > :nth-child(5),
+.box > :nth-child(6) {
+    grid-column: span 2; /* Cela les fait occuper toute la ligne */
+}
+
+.box > :nth-child(5) {
+    display: flex; /* Pour le 5ème enfant, on utilise flexbox */
+}
+
+.box > :nth-child(6) {
+    display: block; /* Pour le 6ème enfant, on utilise block ou initial */
+}
+
+
+.card {
+    background: linear-gradient(90deg,#5C6898,#5589A4,#398FA3,#50904A,#4B9342);
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 100%;
+    margin-left: 4em;
+} 
+.overlay {
+    padding: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+form .btn {
+    margin-top: 10px;
+    background-color: #5DC162;
+}
+
+.heading {
+    background: linear-gradient(90deg, #143515,#5DC162);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative; /* Nécessaire pour positionner la ligne */
+    margin-top: 1.9em;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.name-overlay {
+    margin-top: -1em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centrer le nom horizontalement */
+    background-color: white; /* Fond blanc */
+    padding: 5px 10px; /* Un peu d'espace autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre pour l'effet */
+}
+
+.name-overlay h6 {
+    font-weight: bold;
+}
+
+/* pied de page */
+
+
+.footer {
+    background-color: #0a3b59;
+    color: white;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+.footer .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+.footer .divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+.footer-bottom {
+    background-color: #4CAF50;
+    padding: 10px 0;
+ 
+}
