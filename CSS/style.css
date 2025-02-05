@@ -9,65 +9,120 @@ body {
     text-align: center;
 }
 
-.heading{
-    color: black;
+.heading {
+    background: linear-gradient(90deg, #143515,#5DC162);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 1.5em;
+    position: relative; /* Nécessaire pour positionner la ligne */
+    margin-top: 1.9em;
+}
+
+.heading::after {
+    content: ""; /* Élément vide pour la ligne */
+    display: block;
+    width: 15%; /* Largeur de la ligne */
+    height: 4px; /* Épaisseur de la ligne */
+    background: linear-gradient(90deg, #143515,#5DC162);
+    position: absolute; 
+    bottom: -10px;
+    left: 50%; /* Alignement au centre */
+    transform: translateX(-50%); /* Décalage pour centrer */
+    border-radius: 2px; /* Coins arrondis pour un effet plus doux */
+   
 }
 
 .hero h3 {
     font-size: 32px;
     font-weight: bold;
+    margin-top: -2em;
 }
 
 .hero h1 {
     font-size: 40px;
     font-weight: bold;
+    margin-top: 0.9em;
 }
 
 .hero p {
     font-size: 16px;
+    line-height: 2em;
+    margin-top: 3em;
 }
 
 .btn-custom {
     background-color: #1C5B20;
     color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-bottom: 100px;
+    padding: 20px 35px;
+    margin-top: 1.2em;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
     border: 2px solid #1C5B20;
-    padding: 30px 30px;
+    padding: 20px 30px;
     background-color: #1C5B20;
+    filter: brightness(100%);
 }
 
-.carousel-item .text-start{
-    padding-top: -30em;
+/* Réglage de la hauteur du carrousel */
+.carousel-item img {
+    width: 100%;
+    height: 70vh; /* 65% de la hauteur de l'écran */
+    object-fit: cover; /* Recadre l'image sans la déformer */
 }
 
-/* Cards Hover Effect */
+/* Centrage du texte dans le carrousel */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    
+}
+
+/* Effet de hover sur les cards */
 .info-card {
     background-color: white;
     transition: background 0.3s, color 0.3s;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.info-card h5{
+/* Couleur du titre et du texte par défaut */
+.info-card {
+    background-color: white;
+    transition: background 0.3s, color 0.3s;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+
+.info-card h5 {
     color: #7AE37F;
-    transition: background 0.3s, color 0.3s;
+    transition: color 0.3s;
 }
 
-.info-card p{
+.info-card p {
     color: black;
-    transition: background 0.3s, color 0.3s;
+    transition: color 0.3s;
 }
 
+/* Changement de couleur au hover */
 .info-card:hover {
     background-color: #7AE37F;
+}
+
+.info-card:hover h5,
+.info-card:hover p {
     color: white;
 }
+
 
 /* Nos Étapes de Travail */
 .steps {
@@ -119,7 +174,7 @@ h2{
 .mt-5 h5{
     color: #7BCDFF;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .clients{
@@ -127,27 +182,31 @@ h2{
     grid-template-columns: repeat(1,1fr);
 }
 
-.portfolio-container{
+
+.projets-container{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 align-items: center;
 margin-left: 10em;
 }
 
-.portfolio-box{
-background-image: url('../assets/images/beau-tir-cascade-qui-descend-montagnes_181624-1282.jpg');
+.projets-box {
+    background-image: url('../assets/images/beau-tir-cascade-qui-descend-montagnes_181624-1282.jpg');
+    height: 25rem; /* Assurez-vous que la hauteur est bien définie */
+    width: 40rem; /* Largeur plus grande que le carousel */
+    position: relative;
 }
 
-.portfolio-detail{
+.projets-detail{
 display: none;
 
 }
 
-.portfolio-detail.active{
+.projets-detail.active{
 display: block;
 }
 
-.portfolio-box  h3{
+.projets-box  h3{
 font-size: 2rem;
 margin: .8rem 0 2rem;
 color: #5DC162;
@@ -157,68 +216,68 @@ margin-left: 0.3em;
 padding-top: 1em;
 }
 
-.portfolio-box p{
+.projets-box p{
 font-size: 1rem;
 font-weight: bold;
 text-align: left;
 margin-left: 1em;
+color: white;
 }
 
-.porfolio-box{
-background-color: #5DC162;
-height: 71%;
-margin-top: 1.8%;
-width: 45%;
+.projets-carousel {
+    width: 15rem; /* Moins large que .projets-box */
+    height: 25rem; /* Même hauteur que .projets-box */
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 90%; /* Ajustez selon votre mise en page */
+    transform: translate(-50%, -50%);
+    background-color: #5DC162;
 }
 
-.porfolio-box .portfolio-carousel{
-width: 100%;
-height: 30rem;
-border-radius: 3rem;
-overflow: hidden;
+.projets-carousel .img-slide {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 1em;
+    z-index: 10;
 }
 
-.portfolio-carousel .img-slide{
-display: grid;
-grid-auto-flow: column;
-grid-auto-columns: 100%;
-gap: 2rem;
-height: inherit;
-transition: transform 0.5s ease-in-out;
+.projets-carousel .img-item {
+    width: 100%;
 }
 
-
-.portfolio-carousel .img-item img{
-display: block;
-width: 80%;
-height: 50%;
-object-fit: cover;
-border-radius: 1rem;
-margin-top: 2rem;
+.projets-carousel .img-item img {
+    display: block;
+    width: 90%; /* La moitié de la largeur du conteneur */
+    height: 90%; /* La moitié de la hauteur du conteneur */
+    object-fit: cover;
+    margin-top: 6rem;
 }
-
-.portfolio-box .navigation{
+.projets-box .navigation{
 text-align: right;
-margin-top: 3rem;
+margin-right: 12em;
+margin-top: 2em;
 }
 
-.portfolio-box .navigation button{
+.projets-box .navigation button{
 display: inline-flex;
 padding: .1rem;
 background: white;
 border: .2rem solid var(--main-color);
-border-radius: .6rem;
-font-size: 3rem;
+border-radius: 50%;
+font-size: 2rem;
 color: var(--main-color);
 cursor: pointer;
 }
 
-.portfolio-box .navigation button.disabled{
+.projets-box .navigation button.disabled{
 border-color: rgb(12, 12, 12);
 color: var(--second-bg-color);
 }
 
-.portfolio-box .navigation .arrow-right{
+.projets-box .navigation .arrow-right{
 margin-left: .5rem;
 }
 
