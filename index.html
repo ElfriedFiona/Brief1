@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/images/logo.png" alt="logo" class="me-2">
+        <span>GreenTech Solutions</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Nos services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <!-- Search Input with Icon -->
+          <div class="input-group input-group-sm w-50">
+            <input type="search" class="form-control search-input" placeholder="Search..." aria-label="Search">
+            <span class="input-group-text">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+          <button class="btn btn-outline-light ms-3 btn-quote">GET A QUOTE</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section avec Carrousel -->
+    <div id="heroCarousel" class="carousel slide hero" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/wind-farm.jpg" class="d-block w-100" alt="Énergie éolienne">
+                <div class="carousel-caption text-start">
+                    <h3>ÉNERGIE ÉOLIENNE</h3>
+                    <h1>Nous investissons dans l'avenir <br> de la planète !</h1>
+                    <p>En tant que distributeur mondial de fournitures solaires, nous nous efforçons defournir un <br> 
+                        service rapide et compétent. Nous pouvons vous livrer les matériaux par voie maritime ou aérienne.</p>
+                    <a href="#" class="btn btn-custom">En savoir plus</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption text-start">
+                    <h3>ÉNERGIE ÉOLIENNE</h3>
+                    <h1>Alimentez la société avec <br> une énergie fiable !</h1>
+                    <p>En tant que distributeur mondial de solutions solaires, nous nous efforçons de fournir <br> un service rapide 
+                        et expert. Nous pouvons vous livrer les matériaux par voie maritime ou aérienne.</p>
+                    <a href="#" class="btn btn-custom">En savoir plus</a>
+                </div>
+                <img src="assets/images/wind-farm1.jpg" class="d-block w-100" alt="Énergie éolienne">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption text-start">
+                    <h3>ÉNERGIE ÉOLIENNE</h3>
+                    <h1>L’énergie éolienne est la source <br> d’énergie la plus abondante sur Terre.</h1>
+                    <p>En tant que distributeur mondial de fournitures solaires, nous nous efforçons defournir un <br>
+                        service rapide et compétent. Nous pouvons vous livrer les matériaux par voie maritime ou aérienne.</p>
+                    <a href="#" class="btn btn-custom">En savoir plus</a>
+                </div>
+                <img src="assets/images/wind-farm2.jpg" class="d-block w-100" alt="Énergie éolienne">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Cartes Superposées -->
+    <div class="container position-relative" style="margin-top: -50px;">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="p-4 border info-card">
+                    <h5>Support 24/7</h5>
+                    <p>Toujours là pour vous, <br>
+                        toujours en évolution.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border info-card">
+                    <h5>Des services de confiance</h5>
+                    <p>Parce que chaque besoin est 
+
+                        unique, notre expertise s’adapte
+                        
+                         à vous en permanence.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border info-card">
+                    <h5>Une expertise qui évolue avec vous</h5>
+                    <p>Parce que chaque défi est 
+
+                        unique, notre expérience 
+                        
+                        s’adapte en permanence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nos Étapes de Travail -->
+    <div class="container text-center mt-5">
+        <h2>Nos étapes de travail</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="circle circle-5">
+                <div class="circle circle-4">
+                <div class="circle circle-3">
+                <div class="circle circle-2">
+                <div class="circle circle-1">1
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+                <h5>Planification de projet</h5>
+                <p>L’énergie éolienne est l’une des ressources les plus durables disponibles.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="circle circle-5">
+                    <div class="circle circle-4">
+                    <div class="circle circle-3">
+                    <div class="circle circle-2">
+                    <div class="circle circle-1">2
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <h5>Recherche & Analyse</h5>
+                <p>Nous menons une étude approfondie avant de lancer un projet.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="circle circle-5">
+                    <div class="circle circle-4">
+                    <div class="circle circle-3">
+                    <div class="circle circle-2">
+                    <div class="circle circle-1">3
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <h5>Projet terminé</h5>
+                <p>Nous livrons des résultats optimaux pour un changement durable.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nos services -->
+     <section class="container text-center mt-5">
+        <h2 class="heading">NOS SERVICES</h2> 
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img src="assets/images/🦆 icon _tech solar panel_.png" alt="">
+                <h5>PANNEAU SOLAIRE</h5>
+                <p>GreenTech Solutions valorise 
+
+                    les déchets organiques en les transformant 
+                    
+                    en énergie verte. Nous concevons des 
+                    
+                    unités de production de biomasse 
+                    
+                    et de biogaz permettant de convertir
+                    
+                     les résidus agricoles, industriels et ménagers en 
+                    
+                    électricité et en chaleur. Nos installations sur 
+                    
+                    mesure offrent aux entreprises une alternative 
+                    
+                    énergétique économique, tout en contribuant 
+                    
+                    à la réduction des déchets et des émissions
+                    
+                     de gaz à effet de serre</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/🦆 icon _biomass energy_.png" alt="">
+                <h5>BIOMASSE ET BIOGAZ</h5>
+                <p>GreenTech Solutions conçoit, 
+
+                    installe et optimise des systèmes 
+                    
+                    solaires photovoltaïques pour particuliers 
+                    
+                    et entreprises. Nos solutions sur mesure 
+                    
+                    permettent de capter l énergie du soleil 
+                    
+                    afin de produire de l électricité propre et durable. 
+                    
+                    Nous accompagnons nos clients de l étude 
+                    
+                    de faisabilité à la mise en service, en assurant 
+                    
+                    un rendement optimal et une réduction 
+                    
+                    significative de leur empreinte carbone</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/Mask group.png" alt="">
+                <h5>EOLIENNES</h5>
+                <p>Chez GreenTech Solutions, nous 
+
+                    développons et installons des parcs éoliens 
+                    
+                    adaptés aux besoins des collectivités et 
+                    
+                    des entreprises. Nous prenons en charge
+                    
+                     l'ensemble du processus, de l évaluation 
+                    
+                    du potentiel éolien à l intégration des turbines. 
+                    
+                    Grâce à notre expertise, nous aidons nos clients à 
+                    
+                    exploiter efficacement cette source d énergie 
+                    
+                    renouvelable et à réduire leur dépendance 
+                    
+                    aux combustibles fossiles</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Clients -->
+<div class="container text-center mt-5">
+    <h2>Rencontrez Nos Clients</h2>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <img src="assets/images/solar-01-13.png" class="img-fluid" alt="Client 1">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/solar-01-14.png" class="img-fluid" alt="Client 2">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/solar-01-16.png" class="img-fluid" alt="Client 3">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/solar-01-17.png" class="img-fluid" alt="Client 4">
+        </div>
+    </div>
+</div>
+
+
+    <!-- Nos Projets -->
+    <div class="container text-center mt-5">
+        <h2 class="heading">Nos Derniers Projets</h2>
+        
+                <h5>"Terre, eau, feu et vent : là où il y a de l’énergie, il y a de la vie."</h5>
+                <p>Chez Greenech Solutions, nous développons des solutions énergétiques durables qui transforment 
+
+                    les ressources naturelles en électricité propre et renouvelable. 
+                    
+                    Découvrez quelques uns de nos projets récents qui illustrent notre engagement en faveur d un avenir énergétique plus vert</p>
+                    <div class="projets-container">
+                        <div class="projets-box">
+                            <div class="projets-detail active">
+                            <h3>Centrale Solaire de Douala</h3>
+                            <p class="douala">
+
+                                Objectif : Réduire la dépendance 
+                                
+                                au réseau électrique <br> en exploitant 
+                                
+                                l énergie solaire. <br>
+                                Installation : Plus de 1 500 
+                                
+                                panneaux photovoltaïques <br> couvrant 
+                                
+                                une surface de 10 000 m². <br>
+                                Impact : Fourniture d électricité à plus de 500 
+                                
+                                foyers, <br> réduction de 500 tonnes de CO₂/an.</p>
+                                
+                                
+                            
+                            </div>
+            
+                            <div class="projets-detail">
+                                <h3>Parc Éolien du Littoral</h3>
+                            <p class="littoral"> 
+                                Objectif : Exploiter la puissance du 
+                                vent pour <br> une production d’électricité 
+                                propre et continue. <br> Installation : 12 éoliennes de dernière 
+                                génération <br> installées sur un site 
+                                de 20 hectares. <br> Impact : Capacité de production de 
+                                50 MW, <br> réduction des coûts 
+                                énergétiques <br> pour les entreprises locales.</p>
+                                
+                            
+                            </div>
+
+                            <div class="projets-detail">
+                                <h3>Unité de Biométhanisation <br> de Yaoundé</h3>
+                            <p>
+                                Objectif : Transformer les déchets 
+                                organiques <br> en énergie renouvelable. <br> Installation : Système de digestion 
+                                anaérobie <br> permettant de produire 
+                                du biogaz. <br> Impact : Production de 2 MW 
+                                d’électricité par jour, <br> valorisation 
+                                de plus de 10 tonnes <br> 
+                                de déchets quotidiennement.</p>
+                                
+                            
+                            </div>
+                            <div class="projets-carousel">
+                                <div class="img-slide">
+                                    <div class="img-item">
+                                        <img src="assets/images/centrale-energie-solaire_1387-61.jpg" alt="">
+                                        <p>01-03</p>
+                                    </div>
+                                    <div class="img-item">
+                                        <img src="assets/images/wind-farm.jpg" alt="">
+                                        <p>02-03</p>
+                                    </div>
+                                    <div class="img-item">
+                                        <img src="assets/images/scierie-pour-production-planches-bois_342744-396.jpg" alt="">
+                                        <p>03-03</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="navigation">
+                                <button class="arrow-left disabled"><i class='bx bx-left-arrow-alt' ></i></button>
+                                <button class="arrow-right"><i class='bx bx-right-arrow-alt'></i></button>
+                            </div>
+                        </div>
+            
+                        <div class="projets-box2">
+                            
+                        </div>
+                    </div>
+</div>
+
+
+    <!-- témoignages -->
+    <section class="container text-center mt-5">
+        <h2 class="heading">Témoignages de Nos Clients</h2> 
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img src="assets/images/home-03-70x70.jpg" class="rounded-circle" alt="">
+                <h6>Markus Breitbart</h6>
+                <p>
+                    Grâce à l installation de panneaux 
+                    solaires par GreenTech Solutions, 
+                    notre entreprise a réduit ses coûts 
+                    énergétiques de 40 %. Une équipe 
+                    professionnelle et un service 
+                    impeccable </p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/home-04-70x70.jpg" class="rounded-circle" alt="">
+                <h6>Thomas L., Responsable de projet </h6>
+                <p>environnemental
+
+                    Le parc éolien que nous avons 
+                    développé avec GreenTech 
+                    Solutions fournit de l énergie propre 
+                    à toute notre communauté. Une 
+                    véritable avancée pour un avenir 
+                    durable !</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/home-05-70x70.jpg" class="rounded-circle" alt="">
+                <h6>Marie P., Agricultrice</h6>
+                <p>Le système de biométhanisation 
+                    installé sur notre exploitation nous 
+                    permet de produire notre propre 
+                    électricité à partir des déchets 
+                    organiques. Un vrai plus pour 
+                    l environnement et nos finances </p>
+            </div>
+        </div>
+     </section>
+
+     <footer class="footer">
+        <div class="container">
+    
+            <!-- Company Logo and Description -->
+            <div class="text-center">
+                <div class="footer-logo"><img src="/assets/images/logo.png" alt="logo" class="me-2">Green Tech Solutions</div>
+                <p>Long established fact that a reader will be distracted by the readable content...</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-skype"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="divider"></div>
+                <!-- Contact Section -->
+                <div class="col-md-3 text-center">
+                    <p><strong>Contact Rapide</strong></p>
+                    <p><strong>Téléphone:</strong></p>
+                    <p>+237 (69-------)<br>+237 (67-------)</p>
+                    <p><strong>Email:</strong><br>
+                        <a href="mailto:GreenSolutions@energie.com">GreenSolutions@energie.com</a>
+                    </p>
+                </div>
+    
+                <!-- Recent Posts and Links -->
+                <div class="col-md-3">
+                    <p><strong>Post Recent</strong></p>
+                    <img src="/assets/images/footer1.jpg " alt="Post 1" width=50px height=50px>
+                    <a href="#">Flow is the nature of wind energy</a><br>
+                    <small>January 21, 2022</small><br>
+                    <div class="divider"></div>
+                    <img src="/assets/images/footer2.jpeg" alt="Post 2" width=50px height=50px>
+                    <a href="#">The wind energy or active exercise</a><br>
+                    <small>January 21, 2022</small><br>
+    
+    
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Liens Importants</strong></p>
+                    <a href="#">A Propos</a>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Abonnez-Vous</strong></p>
+                    <p>Long established fact that a reader will be distracted by the readable content...</p>
+                    <form class="d-flex justify-content-center">
+                        <input type="email" class="form-control w-50" placeholder="Votre Email">
+                        <button class="btn btn-success ms-2">Souscrire</button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class=" text-white py-3 footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">Terms & Condition</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">Help Center</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">Testimonial</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">Service</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Copyright &copy; Energin 2024. All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
