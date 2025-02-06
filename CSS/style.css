@@ -228,102 +228,120 @@ h2{
 
 
 .projets-container{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-align-items: center;
-margin-left: 20em;
-}
-
-.projets-box {
-    background-image: url('../assets/images/beau-tir-cascade-qui-descend-montagnes_181624-1282.jpg');
-    height: 25rem; /* Assurez-vous que la hauteur est bien définie */
-    width: 40rem; /* Largeur plus grande que le carousel */
-    position: relative;
-}
-
-.projets-detail{
-display: none;
-
-}
-
-.projets-detail.active{
-display: block;
-}
-
-.projets-box  h3{
-font-size: 2rem;
-margin: .8rem 0 2rem;
-color: #5DC162;
-font-weight: bold;
-text-align: left;
-margin-left: 0.3em;
-padding-top: 1em;
-}
-
-.projets-box p{
-font-size: 1rem;
-font-weight: bold;
-text-align: left;
-margin-left: 1em;
-color: white;
-}
-
-.projets-carousel {
-    width: 15rem; /* Moins large que .projets-box */
-    height: 25rem; /* Même hauteur que .projets-box */
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 90%; /* Ajustez selon votre mise en page */
-    transform: translate(-50%, -50%);
-    background-color: #5DC162;
-}
-
-.projets-carousel .img-slide {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 80%;
-    transition: transform 0.5s ease-in-out;
-    margin-left: 1em;
-    z-index: 10;
-}
-
-.projets-carousel .img-item {
-    width: 100%;
-}
-
-.projets-carousel .img-item img {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-left: 20em;
+    margin-top: 2rem;
+    }
+    
+    .projets-box {
+        background-image: url('../assets/images/beau-tir-cascade-qui-descend-montagnes_181624-1282.jpg');
+        height: 25rem; /* Assurez-vous que la hauteur est bien définie */
+        width: 40rem; /* Largeur plus grande que le carousel */
+        position: relative;
+    }
+    
+    .projets-detail{
+    display: none;
+    
+    }
+    
+    .projets-detail.active{
     display: block;
-    width: 90%; /* La moitié de la largeur du conteneur */
-    height: 90%; /* La moitié de la hauteur du conteneur */
-    object-fit: cover;
-    margin-top: 6rem;
-}
-.projets-box .navigation{
-text-align: right;
-margin-right: 12em;
-margin-top: 2em;
-}
+    }
+    
+    .projets-box  h3{
+    font-size: 2rem;
+    margin: .8rem 0 2rem;
+    color: #5DC162;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 0.3em;
+    padding-top: 1em;
+    }
+    
+    .projets-box p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 1em;
+    color: white;
+    }
 
-.projets-box .navigation button{
-display: inline-flex;
-padding: .1rem;
-background: white;
-border: .2rem solid var(--main-color);
-border-radius: 50%;
-font-size: 2rem;
-color: var(--main-color);
-cursor: pointer;
-}
+    .projets-box .douala{
+        line-height: 2.15rem;
+    }
 
-.projets-box .navigation button.disabled{
-border-color: rgb(12, 12, 12);
-color: var(--second-bg-color);
-}
+        .projets-box .littoral{
+            line-height: 1.85rem;
+    }    
+    
+    .projets-carousel {
+        width: 15rem; /* Moins large que .projets-box */
+        height: 25rem; /* Même hauteur que .projets-box */
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 90%; /* Ajustez selon votre mise en page */
+        transform: translate(-50%, -50%);
+        background-color: #5DC162;
+    }
+    
+    .projets-carousel .img-slide {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        transition: transform 0.5s ease-in-out;
+        z-index: 10;
+    }
 
-.projets-box .navigation .arrow-right{
-margin-left: .5rem;
-}
+    .projets-carousel .img-slide :nth-child(2) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .projets-carousel .img-slide :last-child {
+        padding-left: 4rem;
+    }
+    
+    .projets-carousel .img-item {
+        width: 15rem;
+    }
+    
+    .projets-carousel .img-item img {
+        display: block;
+        width: 15rem; /* La moitié de la largeur du conteneur */
+        height: 70%; /* La moitié de la hauteur du conteneur */
+        object-fit: cover;
+        margin-top: 6rem;
+    }
+
+    .projets-box .navigation{
+    text-align: right;
+    margin-right: 12em;
+    margin-top: 2em;
+    }
+    
+    .projets-box .navigation button{
+    display: inline-flex;
+    padding: .1rem;
+    background: white;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    }
+    
+    .projets-box .navigation button.disabled{
+    border-color: rgb(12, 12, 12);
+    color: var(--second-bg-color);
+    }
+    
+    .projets-box .navigation .arrow-right{
+    margin-left: .5rem;
+    }
 
 
 .footer {
@@ -384,35 +402,6 @@ margin-left: .5rem;
 }
 
 
-    .projets-container {
-        grid-template-columns: 1fr;
-        margin-left: 5em;
-        text-align: center;
-    }
-
-    .projets-box {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .projets-carousel {
-        position: static;
-        margin: 2rem auto;
-        width: 90%;
-        height: 20rem;
-    }
-
-    .projets-carousel .img-item img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .projets-box .navigation {
-        margin-right: 0;
-        text-align: center;
-    }
-
 
 @media (max-width: 768px) {
     .hero h3 {
@@ -441,32 +430,7 @@ margin-left: .5rem;
     }
 }
 
-    .projets-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .projets-box {
-        width: 100%;
-        text-align: center;
-    }
-
-    .projets-carousel {
-        width: 100%;
-        height: auto;
-    }
-
-    .projets-box .navigation {
-        text-align: center;
-        margin: 1rem 0;
-    }
-
-    .projets-box .navigation button {
-        font-size: 1.5rem;
-        padding: 0.3rem;
-    }
+    
     @media (max-width: 480px) {
         .hero h3 {
             font-size: 20px;
@@ -493,3 +457,19 @@ margin-left: .5rem;
             padding: 10px 18px;
         }
     }
+
+    /* Pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 992px) {
+    .projets-container {
+        margin-left: 0;  /* Réduire les marges autour du conteneur */
+    }
+
+ 
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 576px) {
+    .projets-container {
+        margin-left: 0;  /* Réduire les marges autour du conteneur */
+    }
+}
