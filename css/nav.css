@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #0a3b59; /* Bleu foncé */
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar-brand span {
+    color: #5ed75e;
+}
+.navbar-brand span #white{
+    color: white;
+}
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #5ed75e; /* Vert */
+}
+.btn-quote {
+    border: 1px solid white;
+    color: white;
+}
+.btn-quote:hover {
+    background-color: white;
+    color: #0a3b59;
+}
+.input-group-text {
+    background-color: #5ed75e;
+    color: white;
+    border: none;
+}
+.search-input {
+    border: none;
+}
+body {
+    padding-top: 70px;
+}
