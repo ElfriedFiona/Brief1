@@ -1,21 +1,4 @@
-/* div{
-    background:url(../assets/images/solar-panels-wind-turbines-green-energy-concept\ 1.jpg) ;
-} */
- .text-design-1{
-
- }
-
-/* .hero {
-    background-image: url("../assets/Imgs/solar-panels-wind-turbines-green-energy-concept.jpg");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    /* height:1vh; */
-
-/* .top{
-    margin-top: 2em;
-} */
-
+/* NAVBAR */
 .navbar {
     background-color: #0a3b59; /* Bleu foncé */
 }
@@ -50,11 +33,13 @@
 }
 .search-input {
     border: none;
+    /* corps du devoir */
 }
 body {
     padding-top: 50px;
 }
 
+    /* image de fond */
 .hero{
     width: 100%;
     height: 60vh;
@@ -65,7 +50,7 @@ body {
     align-items: center;
 }
 
-/* Nos Étapes de Travail */
+    /* Nos Étapes de Travail */
 .steps {
     text-align: center;
 }
@@ -106,30 +91,42 @@ body {
     background-color: #F4FFF5; 
 }
 
+    /* Annees d'experience  */
+
 /* Style pour le sous-titre */
 .experience-subtitle {
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    margin-top: -20px; /* Ajuster le positionnement si nécessaire */
+    /* font-size: 2rem;
+    font-weight: bold ; */
+    /* color: black; */
+    /* margin-top: 20px; Ajuster le positionnement si nécessaire */
+    /* display:grid ;
+    float: inline-start;
+    position: relative; */
 }
 
 /* Style pour le texte à droite */
 .experience-text h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #000;
-    margin-top: -1.5em;
+    /* font-size: 2rem; */
+    /* font-weight: bold; */
+    /* color: #000; */
+    margin-top: -1em;
+    margin-right: 8em;
+}
+.container h3{
+    margin-right: 17em ;
+    margin-bottom: 1em;
 }
 
 .experience-text p {
-    margin-right: 0;
+    /* margin-right: 0;
     margin-top: 1em;
     font-size: 1rem;
-    color: #6c757d; /* Texte gris pour la description */
+    color: #6c757d; Texte gris pour la description */
 }
 
-.avis{
+
+/* section des avis */
+/* .avis{
     background-color: rgb(214, 208, 208);
     padding: 70px 10px;
     margin: 20px 0;
@@ -157,9 +154,9 @@ body {
 }
 
 .box > :nth-child(5),
-.box > :nth-child(6) {
-    grid-column: span 2; /* Cela les fait occuper toute la ligne */
-}
+.box > :nth-child(6) { */
+    /* grid-column: span 2; /* Cela les fait occuper toute la ligne */
+/* } */ 
 
 .box > :nth-child(5) {
     display: flex; /* Pour le 5ème enfant, on utilise flexbox */
@@ -171,15 +168,18 @@ body {
 
 
 .card {
-    background: linear-gradient(90deg,#5C6898,#5589A4,#398FA3,#50904A,#4B9342);
+    /* background: linear-gradient(90deg,#5C6898,#5589A4,#398FA3,#50904A,#4B9342);
     background-size: cover;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
+    color: white; */
+    background-image: url("../assets/images/Group\ 21.jpg");
+    background-repeat: no-repeat;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    width: 70%;
     height: 100%;
     margin-left: 4em;
 } 
+
 .overlay {
     padding: 50px;
     border-radius: 10px;
@@ -190,6 +190,7 @@ form .btn {
     background-color: #5DC162;
 }
 
+/* team members */
 .heading {
     background: linear-gradient(90deg, #143515,#5DC162);
     -webkit-background-clip: text;
@@ -207,12 +208,13 @@ form .btn {
 .name-overlay {
     margin-top: -1em;
     position: absolute;
+    text-align: center;
     left: 50%;
     transform: translateX(-50%); /* Centrer le nom horizontalement */
-    background-color: white; /* Fond blanc */
-    padding: 5px 10px; /* Un peu d'espace autour du texte */
-    border-radius: 5px; /* Coins arrondis */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre pour l'effet */
+    /* background-color: white; Fond blanc */
+    /* padding: 10px 10px; Un peu d'espace autour du texte */
+    /* border-radius: 5px; Coins arrondis */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); Ombre pour l'effet */
 }
 
 .name-overlay h6 {
