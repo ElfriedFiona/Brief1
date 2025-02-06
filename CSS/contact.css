@@ -54,7 +54,7 @@ body {
  .footer {
     background-color: #0a3b59;
     color: white;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
 }
 .footer .footer-logo {
     font-size: 24px;
@@ -79,7 +79,7 @@ body {
 }
 .footer-bottom {
     background-color: #4CAF50;
-    padding: 10px 0;
+    padding: 20px 0;
  
 }
 
